@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ร้านหนังสือ | Nadon of Math</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .book {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+        }
+
+        .book h2 {
+            margin-top: 0;
+        }
+
+        .book button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: #222;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .book button:hover {
+            opacity: 0.8;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .back a {
+            color: #222;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 ร้านหนังสือ</h1>
+        <p>Nadon of Math</p>
+    </header>
+
+    <div class="container">
+
+        <div class="book">
+            <h2>พหุนามเบื้องต้น</h2>
+            <p>
+                เอกสารสำหรับศึกษาพื้นฐานเกี่ยวกับเอกนาม
+                และพหุนาม รวมถึงการบวก ลบ คูณ และหารพหุนาม
+            </p>
+
+            <p><strong>ราคา: 99 บาท</strong></p>
+
+            <button onclick="alert('กำลังเตรียมหน้ารายละเอียดหนังสือ')">
+                ดูรายละเอียด
+            </button>
+        </div>
+
+        <div class="book">
+            <h2>ทฤษฎีจำนวนเบื้องต้น</h2>
+            <p>
+                เอกสารรวบรวมแนวคิดพื้นฐานของทฤษฎีจำนวน
+                สำหรับผู้ที่ต้องการเริ่มต้นศึกษาด้วยตนเอง
+            </p>
+
+            <p><strong>ราคา: 129 บาท</strong></p>
+
+            <button onclick="alert('กำลังเตรียมหน้ารายละเอียดหนังสือ')">
+                ดูรายละเอียด
+            </button>
+        </div>
+
+    </div>
+
+    <div class="back">
+        <a href="index.html">← กลับหน้าหลัก</a>
+    </div>
+
+</body>
+</html>
