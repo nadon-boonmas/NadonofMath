@@ -158,32 +158,32 @@
     ],
 
     exams: [
-      {
-        id: 'abcdefg',
-        title: 'แบบทดสอบรากต่างๆและกรณฑ์ต่างๆม.2',
-        description: 'ชุดข้อสอบครอบคลุมทั้งรากที่2,3 กรณฑ์2,3 และโจทย์ที่มีคุณภาพ',
-        topic: 'จำนวนจริง',
-        level: 'ม.2',
-        questions: 30,
-        difficulty: 'ปานกลาง',
-        duration: '60 นาที',
-        status: 'ฟรี',
-        symbol: '∑',
-        cover: 'assets/images/exam-cover-1.jpg',
-        pdf: 'pdf/exams/abcdefg.pdf',
-        solution: 'pdf/exams/polynomial-solution.pdf',
-        topics: ['รากที่สอง', 'รากที่สาม', 'กรณฑ์ที่สอง', 'กรณฑ์ที่สาม'],
-        samples: [
-          'จงหาผลบวกของ (3x² + 5x − 2) + (x² − 4x + 7)',
-          'จงหาดีกรีของพหุนาม 7x³y² − 4xy + 9',
-          'จงหาผลคูณของ (2x − 3)(x + 5)',
-          'จงหาผลหาร (12x⁴ − 8x³ + 4x²) ÷ 4x²'
-        ],
-        previews: [
-          'assets/previews/polynomial-test-1.jpg',
-          'assets/previews/polynomial-test-2.jpg'
-        ]
-      },
+{
+    id: 'abcdefg',
+    title: 'แบบทดสอบรากต่างๆและกรณฑ์ต่างๆ ม.2',
+    description: 'ชุดข้อสอบครอบคลุมทั้งรากที่ 2, 3 กรณฑ์ที่ 2, 3 และโจทย์ที่มีคุณภาพ',
+    topic: 'จำนวนจริง',
+    level: 'ม.2',
+    questions: 30,
+    difficulty: 'ปานกลาง',
+    duration: '60 นาที',
+    status: 'ฟรี',
+    symbol: 'Σ',
+    cover: 'assets/images/exam-cover-1.jpg',
+    pdf: 'pdf/exams/abcdefg.pdf',
+    solution: 'pdf/exams/polynomial-solution.pdf',
+    topics: ['รากที่สอง', 'รากที่สาม', 'กรณฑ์ที่สอง', 'กรณฑ์ที่สาม'],
+    samples: [
+        'จงหาผลบวกของ (3x² + 5x - 2) + (x² - 4x + 7)',
+        'จงหาดีกรีของพหุนาม 7x³y² - 4xy + 9',
+        'จงหาผลคูณของ (2x - 3)(x + 5)',
+        'จงหาผลหาร (12x⁴ - 8x³ + 4x²) ÷ 4x²'
+    ],
+    previews: [
+        'assets/previews/polynomial-test-1.jpg',
+        'assets/previews/polynomial-test-2.jpg'
+    ]
+},
       {
         id: 'linear-equation-test',
         title: 'แบบฝึกหัดสมการเชิงเส้น ม.1',
