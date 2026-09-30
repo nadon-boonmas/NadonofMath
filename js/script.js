@@ -159,10 +159,10 @@
 
     exams: [
       {
-        id: 'polynomial-test',
-        title: 'แบบทดสอบพหุนาม ม.2',
-        description: 'ชุดข้อสอบครอบคลุมการบวก ลบ คูณ หารพหุนาม พร้อมเฉลยอย่างละเอียด',
-        topic: 'พหุนาม',
+        id: 'abcdefg',
+        title: 'แบบทดสอบรากต่างๆและกรณฑ์ต่างๆม.2',
+        description: 'ชุดข้อสอบครอบคลุมทั้งรากที่2,3 กรณฑ์2,3 และโจทย์ที่มีคุณภาพ',
+        topic: 'จำนวนจริง',
         level: 'ม.2',
         questions: 30,
         difficulty: 'ปานกลาง',
@@ -170,7 +170,7 @@
         status: 'ฟรี',
         symbol: '∑',
         cover: 'assets/images/exam-cover-1.jpg',
-        pdf: 'pdf/exams/polynomial-test.pdf',
+        pdf: 'pdf/exams/abcdefg.pdf',
         solution: 'pdf/exams/polynomial-solution.pdf',
         topics: ['เอกนาม', 'ดีกรีของพหุนาม', 'การบวก-ลบพหุนาม', 'การคูณพหุนาม', 'การหารด้วยเอกนาม'],
         samples: [
