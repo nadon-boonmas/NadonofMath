@@ -172,7 +172,7 @@
         cover: 'assets/images/exam-cover-1.jpg',
         pdf: 'pdf/exams/abcdefg.pdf',
         solution: 'pdf/exams/polynomial-solution.pdf',
-        topics: ['เอกนาม', 'ดีกรีของพหุนาม', 'การบวก-ลบพหุนาม', 'การคูณพหุนาม', 'การหารด้วยเอกนาม'],
+        topics: ['รากที่สอง', 'รากที่สาม', 'กรณฑ์ที่สอง', 'กรณฑ์ที่สาม'],
         samples: [
           'จงหาผลบวกของ (3x² + 5x − 2) + (x² − 4x + 7)',
           'จงหาดีกรีของพหุนาม 7x³y² − 4xy + 9',
