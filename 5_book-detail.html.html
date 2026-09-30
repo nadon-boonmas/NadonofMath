@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>รายละเอียดหนังสือ — Nadon of Math</title>
+<meta name="description" content="รายละเอียดหนังสือคณิตศาสตร์ เนื้อหาภายใน ตัวอย่างหน้าหนังสือ และลิงก์ดาวน์โหลด PDF ฟรี">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Spectral:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="book-detail">
+
+<a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">∑</span>
+      <span class="brand__text"><strong>Nadon of Math</strong><small>Explore • Understand • Create Mathematics</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="เปิดเมนูนำทาง">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="เมนูหลัก">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="books.html" class="is-active">ร้านหนังสือ</a></li>
+        <li><a href="exams.html">ร้านข้อสอบ</a></li>
+        <li><a href="ai.html">ร้านผลงาน AI</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div id="detailRoot" hidden>
+    <section class="page-head page-head--slim">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="เส้นทางนำทาง">
+          <a href="index.html">หน้าแรก</a><span aria-hidden="true">/</span>
+          <a href="books.html">ร้านหนังสือ</a><span aria-hidden="true">/</span>
+          <span data-field="title"></span>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container detail">
+        <figure class="detail__cover">
+          <img data-field="cover" src="" alt="">
+        </figure>
+
+        <div class="detail__info">
+          <p class="eyebrow" data-field="eyebrow">หนังสือคณิตศาสตร์</p>
+          <h1 data-field="title"></h1>
+          <p class="lead" data-field="description"></p>
+
+          <dl class="spec">
+            <div><dt>ผู้จัดทำ</dt><dd data-field="author"></dd></div>
+            <div><dt>ระดับชั้น</dt><dd data-field="level"></dd></div>
+            <div><dt>จำนวนหน้า</dt><dd data-field="pages"></dd></div>
+            <div><dt>สถานะ</dt><dd data-field="status"></dd></div>
+          </dl>
+
+          <div class="detail__actions">
+            <a class="btn btn--solid" data-field="pdf" href="#" download data-download>ดาวน์โหลด PDF ฟรี</a>
+            <a class="btn btn--ghost" href="books.html">← กลับไปที่ร้านหนังสือ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">เนื้อหาภายใน</h2>
+        <ol class="toc" data-field="contents"></ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">ตัวอย่างหน้าหนังสือ</h2>
+        <p class="muted">คลิกที่ภาพเพื่อดูขนาดใหญ่</p>
+        <div class="preview-grid" data-field="previews"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">หนังสือเล่มอื่นที่น่าสนใจ</h2>
+        <div class="grid" data-field="related"></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="notFound" hidden>
+    <div class="container not-found">
+      <h1>ไม่พบหนังสือที่ต้องการ</h1>
+      <p>ลิงก์อาจไม่ถูกต้อง หรือหนังสือเล่มนี้ถูกย้ายไปแล้ว</p>
+      <a class="btn btn--solid" href="books.html">กลับไปที่ร้านหนังสือ</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand__mark" aria-hidden="true">∑</span>
+      <div><strong>Nadon of Math</strong><small>Explore • Understand • Create Mathematics</small></div>
+    </div>
+    <nav aria-label="เมนูส่วนท้าย">
+      <ul class="footer-nav">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="books.html">ร้านหนังสือ</a></li>
+        <li><a href="exams.html">ร้านข้อสอบ</a></li>
+        <li><a href="ai.html">ร้านผลงาน AI</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 Nadon of Math. All rights reserved.</p></div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="ภาพตัวอย่างขนาดใหญ่" hidden>
+  <button class="lightbox__close" data-lb-close aria-label="ปิดภาพตัวอย่าง">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" data-lb-prev aria-label="ภาพก่อนหน้า">‹</button>
+  <figure class="lightbox__figure"><img id="lightboxImg" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" data-lb-next aria-label="ภาพถัดไป">›</button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

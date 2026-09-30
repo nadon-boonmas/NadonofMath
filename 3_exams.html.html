@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ร้านข้อสอบ — Nadon of Math</title>
+<meta name="description" content="รวมชุดข้อสอบและแบบฝึกหัดคณิตศาสตร์พร้อมเฉลย ดาวน์โหลด PDF ฟรีที่ Nadon of Math">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Spectral:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="exams">
+
+<a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">∑</span>
+      <span class="brand__text"><strong>Nadon of Math</strong><small>Explore • Understand • Create Mathematics</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="เปิดเมนูนำทาง">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="เมนูหลัก">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="books.html">ร้านหนังสือ</a></li>
+        <li><a href="exams.html" class="is-active">ร้านข้อสอบ</a></li>
+        <li><a href="ai.html">ร้านผลงาน AI</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="เส้นทางนำทาง">
+        <a href="index.html">หน้าแรก</a><span aria-hidden="true">/</span><span>ร้านข้อสอบ</span>
+      </nav>
+      <h1>ร้านข้อสอบ</h1>
+      <p class="lead">แบบฝึกหัดและข้อสอบสำหรับฝึกทักษะทางคณิตศาสตร์</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="toolbar" role="search" onsubmit="return false;">
+        <div class="field field--search">
+          <label for="searchInput" class="sr-only">ค้นหาผลงาน</label>
+          <span class="field__icon" aria-hidden="true">🔍</span>
+          <input type="search" id="searchInput" placeholder="ค้นหาผลงาน…" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="filterLevel">ระดับชั้น</label>
+          <select id="filterLevel"><option value="">ทั้งหมด</option></select>
+        </div>
+        <div class="field">
+          <label for="filterDifficulty">ความยาก</label>
+          <select id="filterDifficulty"><option value="">ทั้งหมด</option></select>
+        </div>
+        <button type="button" class="btn btn--ghost btn--sm" id="resetFilters">ล้างตัวกรอง</button>
+      </form>
+
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+      <div class="grid" id="cardGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>ไม่พบชุดข้อสอบที่ตรงกับเงื่อนไข ลองเปลี่ยนคำค้นหาหรือล้างตัวกรอง</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand__mark" aria-hidden="true">∑</span>
+      <div><strong>Nadon of Math</strong><small>Explore • Understand • Create Mathematics</small></div>
+    </div>
+    <nav aria-label="เมนูส่วนท้าย">
+      <ul class="footer-nav">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="books.html">ร้านหนังสือ</a></li>
+        <li><a href="exams.html">ร้านข้อสอบ</a></li>
+        <li><a href="ai.html">ร้านผลงาน AI</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 Nadon of Math. All rights reserved.</p></div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="ภาพตัวอย่างขนาดใหญ่" hidden>
+  <button class="lightbox__close" data-lb-close aria-label="ปิดภาพตัวอย่าง">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" data-lb-prev aria-label="ภาพก่อนหน้า">‹</button>
+  <figure class="lightbox__figure"><img id="lightboxImg" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" data-lb-next aria-label="ภาพถัดไป">›</button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
